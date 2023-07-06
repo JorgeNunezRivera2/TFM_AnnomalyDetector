@@ -1,0 +1,38 @@
+base : 0.3615376949310303
+eps iter: 0.03
+ adversarial prediction mean: 0.6113554239273071
+ 30 fooled,
+eps iter: 0.08
+ adversarial prediction mean: 0.6742889881134033
+ 36 fooled,
+eps iter: 0.1
+ adversarial prediction mean: 0.6805740594863892
+ 36 fooled,
+eps iter: 0.13
+ adversarial prediction mean: 0.6910710334777832
+ 36 fooled,
+eps iter: 0.16
+ adversarial prediction mean: 0.6914417743682861
+ 36 fooled,
+eps iter: 0.2
+ adversarial prediction mean: 0.6905086040496826
+ 36 fooled,
+eps iter: 0.4
+ adversarial prediction mean: 0.6522055268287659
+ 32 fooled,
+ eps iter: 0.5
+adversarial prediction mean: 0.6357549428939819
+ 32 fooled,
+eps iter: 0.6
+ adversarial prediction mean: 0.6141933798789978
+ 27 fooled,
+eps iter: 0.7
+ adversarial prediction mean: 0.6000204682350159
+ 27 fooled,
+eps iter: 1.0
+ adversarial prediction mean: 0.551528811454773
+ 23 fooled,
+eps iter: 1.5
+ adversarial prediction mean: 0.4935854971408844
+ 15 fooled,
+

@@ -1,0 +1,32 @@
+TEST DATA
+MODEL 1
+Mean Error in clean data: 0.1505214124917984
+Error variance in clean data: 0.0030083779711276293
+Mean error in adversarial data: 0.9087941646575928
+Error variance in adversarial data: 0.22571642696857452
+MODEL 2
+Mean Error in clean data: 0.12936031818389893
+Error variance in clean data: 0.001948495744727552
+Mean error in adversarial data: 0.9490158557891846
+Error variance in adversarial data: 0.2342824637889862
+MODEL 3
+Mean Error in clean data: 0.14136344194412231
+Error variance in clean data: 0.0022715814411640167
+Mean error in adversarial data: 0.9018373489379883
+Error variance in adversarial data: 0.21577973663806915
+WORST DATA
+MODEL 1
+Mean Error in clean data: 0.14480720460414886
+Error variance in clean data: 0.001607521204277873
+Mean error in adversarial data: 0.7157204151153564
+Error variance in adversarial data: 0.5943734645843506
+MODEL 2
+Mean Error in clean data: 0.1289583146572113
+Error variance in clean data: 0.001083181006833911
+Mean error in adversarial data: 0.7345256805419922
+Error variance in adversarial data: 0.5439589023590088
+MODEL 3
+Mean Error in clean data: 0.13715705275535583
+Error variance in clean data: 0.0013620797544717789
+Mean error in adversarial data: 0.6917062997817993
+Error variance in adversarial data: 0.48780766129493713

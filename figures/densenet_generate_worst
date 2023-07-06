@@ -1,0 +1,14 @@
+densenet worst
+eps iter: 0.03
+Real mean: 0.1376953125, prediction mean: 0.3160057067871094,
+adversarial prediction mean: 0.5751088857650757, diff: 0.2591031789779663
+207bad recomendations, 120 fooled, 0 unfooled 256 improved, 0 worsened
+eps iter: 0.05
+Real mean: 0.1376953125, prediction mean: 0.3160057067871094,
+adversarial prediction mean: 0.6106142997741699, diff: 0.29460859298706055
+207bad recomendations, 125 fooled, 0 unfooled 256 improved, 0 worsened
+eps iter: 0.1
+Real mean: 0.1376953125, prediction mean: 0.3160057067871094,
+adversarial prediction mean: 0.6450213193893433, diff: 0.3290156126022339
+207bad recomendations, 134 fooled, 0 unfooled 256 improved, 0 worsened
+Process finished with exit code 0

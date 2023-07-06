@@ -1,0 +1,79 @@
+"C:\Users\jorge\Documents\TFM - copia\TFM\venv\Scripts\python.exe" "C:\Users\jorge\Documents\copia de seguridad\TFM\Experiment.py" 
+eps: 0.005
+65/65 [==============================] - 0s 1ms/step
+ratings mean:0.7942381870781099 , predictions mean: 0.750701904296875, adversarial predictions mean: 0.8916025161743164, diff: 0.1409006118774414
+87bad recomendations, 86 fooled, 15 unfooled 681 improved, 219 worsened
+eps: 0.007
+65/65 [==============================] - 0s 2ms/step
+ratings mean:0.7942381870781099 , predictions mean: 0.750701904296875, adversarial predictions mean: 0.9257053136825562, diff: 0.17500340938568115
+97bad recomendations, 93 fooled, 6 unfooled 728 improved, 172 worsened
+eps: 0.009
+65/65 [==============================] - 0s 1ms/step
+ratings mean:0.7942381870781099 , predictions mean: 0.750701904296875, adversarial predictions mean: 0.9499894976615906, diff: 0.19928759336471558
+100bad recomendations, 99 fooled, 6 unfooled 751 improved, 149 worsened
+eps = 0.005
+130/130 [==============================] - 1s 2ms/step
+Mean Error in clean data: 0.18448397517204285
+Error variance in clean data: 0.0027997754514217377
+130/130 [==============================] - 0s 2ms/step
+Mean error in adversarial data: 0.2813473343849182
+Error variance in adversarial data: 0.0067716315388679504
+AUC = 0.7147013315894357
+130/130 [==============================] - 1s 4ms/step
+Mean Error in clean data: 0.16492094099521637
+Error variance in clean data: 0.002553516998887062
+130/130 [==============================] - 1s 4ms/step
+Mean error in adversarial data: 0.30752497911453247
+Error variance in adversarial data: 0.009821266867220402
+AUC = 0.8193099008340392
+130/130 [==============================] - 1s 4ms/step
+Mean Error in clean data: 0.1687164455652237
+Error variance in clean data: 0.0023662829771637917
+130/130 [==============================] - 1s 4ms/step
+Mean error in adversarial data: 0.5252784490585327
+Error variance in adversarial data: 0.8487498164176941
+AUC = 0.9353009873820055
+eps = 0.007
+130/130 [==============================] - 1s 2ms/step
+Mean Error in clean data: 0.18448397517204285
+Error variance in clean data: 0.0027997754514217377
+130/130 [==============================] - 0s 2ms/step
+Mean error in adversarial data: 0.3871293365955353
+Error variance in adversarial data: 0.015502184629440308
+AUC = 0.8934756929946835
+130/130 [==============================] - 1s 4ms/step
+Mean Error in clean data: 0.16492094099521637
+Error variance in clean data: 0.002553516998887062
+130/130 [==============================] - 1s 4ms/step
+Mean error in adversarial data: 0.4323813319206238
+Error variance in adversarial data: 0.020616095513105392
+AUC = 0.9420182165377653
+130/130 [==============================] - 1s 7ms/step
+Mean Error in clean data: 0.1687164455652237
+Error variance in clean data: 0.0023662829771637917
+130/130 [==============================] - 1s 6ms/step
+Mean error in adversarial data: 0.733285129070282
+Error variance in adversarial data: 3.368915557861328
+AUC = 0.9672148874014408
+eps = 0.009
+130/130 [==============================] - 1s 3ms/step
+Mean Error in clean data: 0.18448397517204285
+Error variance in clean data: 0.0027997754514217377
+130/130 [==============================] - 0s 3ms/step
+Mean error in adversarial data: 0.5197364687919617
+Error variance in adversarial data: 0.03205765783786774
+AUC = 0.9431192339559722
+130/130 [==============================] - 1s 4ms/step
+Mean Error in clean data: 0.16492094099521637
+Error variance in clean data: 0.002553516998887062
+130/130 [==============================] - 1s 4ms/step
+Mean error in adversarial data: 0.5773820281028748
+Error variance in adversarial data: 0.03630111366510391
+AUC = 0.9736111220892548
+130/130 [==============================] - 1s 4ms/step
+Mean Error in clean data: 0.1687164455652237
+Error variance in clean data: 0.0023662829771637917
+130/130 [==============================] - 1s 4ms/step
+Mean error in adversarial data: 0.982009768486023
+Error variance in adversarial data: 9.32144546508789
+AUC = 0.9708912708102986

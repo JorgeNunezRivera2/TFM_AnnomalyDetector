@@ -1,0 +1,2 @@
+model_checkpoint_path: "annomaly_detector_weights"
+all_model_checkpoint_paths: "annomaly_detector_weights"

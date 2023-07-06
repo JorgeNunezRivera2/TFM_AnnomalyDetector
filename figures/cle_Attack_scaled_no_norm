@@ -1,0 +1,146 @@
+eps 0.01
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.2995378077030182
+49bad recomendations, 0 fooled, 0 unfooled 46 improved, 18 worsened
+Found 986 validated image filenames.
+processing 64 images
+"C:\Users\jorge\Documents\TFM - copia\TFM\venv\Scripts\python.exe" "C:\Users\jorge\Documents\copia de seguridad\TFM\Experiment.py"
+eps iter: 0.05
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+C:\Users\jorge\Documents\TFM - copia\TFM\venv\lib\site-packages\keras\preprocessing\image.py:1137: UserWarning: Found 922 invalid image filename(s) in x_col="image_name". These filename(s) will be ignored.
+  warnings.warn(
+Found 64 validated image filenames.
+1/1 [==============================] - 9s 9s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.30441850423812866
+49bad recomendations, 0 fooled, 0 unfooled 47 improved, 17 worsened
+eps iter: 0.1
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.3153263330459595
+49bad recomendations, 0 fooled, 0 unfooled 47 improved, 17 worsened
+eps iter: 0.2
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.3329961895942688
+49bad recomendations, 3 fooled, 0 unfooled 43 improved, 21 worsened
+eps iter: 0.3
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.3394114673137665
+49bad recomendations, 5 fooled, 0 unfooled 43 improved, 21 worsened
+eps iter: 1.0
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.34636086225509644
+49bad recomendations, 5 fooled, 0 unfooled 45 improved, 19 worsened
+eps iter: 1.5
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.34518224000930786
+49bad recomendations, 6 fooled, 0 unfooled 47 improved, 17 worsened
+eps iter: 2.0
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.33648353815078735
+49bad recomendations, 4 fooled, 1 unfooled 46 improved, 18 worsened
+eps iter: 3.0
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.29613539576530457, adversarial prediction mean: 0.3309860825538635
+49bad recomendations, 5 fooled, 1 unfooled 47 improved, 17 worsened
+
+Process finished with exit code 0

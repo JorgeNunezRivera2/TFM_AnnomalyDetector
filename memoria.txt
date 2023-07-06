@@ -1,0 +1,299 @@
+Download
+
+
+    Source
+
+    PDF
+
+Actions
+
+       Copy Project
+       Word Count
+
+Sync
+
+       Dropbox
+
+       Git
+
+       GitHub
+
+Settings
+Compiler
+TeX Live version
+Main document
+Spell check
+Dictionary
+Auto-complete
+Auto-close Brackets
+Code check
+Editor theme
+Keybindings
+Font Size
+Font Family
+Line Height
+PDF Viewer
+Help
+
+       Show Hotkeys
+       Documentation
+       Contact Us
+
+Memoria TFM Jorge Núñez Rivera 2023
+
+LaTeX help
+Editor mode.
+
+▾
+▾
+▾
+▾
+▾
+▾
+▾
+▾
+        Por otra parte, aparecen ataques adversarios "físicos" que actuan sobre objetos que quieren engañar al reconocedor, como gafas que impiden el reconocimiento facial, vinilos que puestos en los coches hacen que no sean identificados como tales, o pegatinas que puestas en señales de tráfico hacen que estas no sean detectadas correctamente por un coche que sea conducido de forma automática \cite{b3}, así como ataques ópticos que modifican la imágen percibida mediante cambios en su iluminación o proyecciones sobre ella \cite{b4}.
+            \begin{figure}[htbp]
+            \centerline{\includegraphics[width=0.5\textwidth]{images/Face recognition attack.png}}
+            \caption{Ataque al reconocimiento facial: La primera columna es la imágen objetivo, la segunda y la cuarta son imágenes de caras originales y la tercera y la quinta son las modificaciones de estas imágenes que son reconocidas como la primera.}
+            \label{fig:Face recognition attack}
+            \end{figure}
+\subsection{Detección de anomalías}
+    La detección de anomalías es un proceso común en machine learning, que utiliza aprendizaje no supervisado, y que se puede hacer con prácticamente cualquier técnica de agrupamiento o clustering, como DBSCAN o Gaussian Mixture, donde encontraremos las anomalías en los datos que se encuentran fuera de los clusters\cite{b5}.
+    Sin embargo con la llegada de las redes neuronales profundas aparece el uso de los llamados Autoencoders para detección de anomalías. Los autoencoders son un tipo de red que aprende a codificar la información y despues decodificarla, pasando por unas capas cuyo tamaño va descendiendo hasta un cuello de botella y luego aumentando. Asi cuando codifiquemos datos similares a los utilizados en el entrenamiento, el resultado de la decodificación será muy parecido al de los datos originales, mientras que cuando se trate de anomalías el resultado de la decodificación tendrá una diferencia mayor con los datos de entrada\cite{b6}.
+\section{Solución propuesta}
+\subsection{Recomendador}
+Para la solución empezaremos por probar varios modelos diferentes del recomendador para ver el que consigue mejores resultados calificando las recomendaciones negativas como tales ya que son en las que nos interesa hacer el ataque adversario. Para ello hemos utilizado Data Augmentation para compensar el desbalanceo del dataset, y tres modelos diferentes:
+\begin{itemize}
+    \item Model 1:
+    \item Model 2:
+    \item Model 3:
+\end{itemize}
+\subsection {Ataques adversarios}
+Probaremos dos tipos de ataques.
+Uno se realizará directamente sobre las deep features extraidas de las imágenes, que son las que usa el recomendador para predecir las recomendaciones, y sobre el modelo del recomendador. Estas deep features son extraidas con Densenet quitándole la última capa densa.
+El otro realizará el ataque sobre las imágenes originales y sobre un modelo que consistirá en densenet preentrenado con pesos de imagenet concatenado con el modelo del recomendador;y a continuación extraerá las features de las imágenes atacadas.
+Ambos ataques se realizaran con la técnica Projected Gradient Descent(REF)
+\subsection {Detección de anomalías}
+Una vez tengamos los ataques que sean capaces de engañar al recomendador apropiadamente, estudiaremos si los features resultados de estos ataques se pueden distinguir de los features de las imágenes originales mediante un autoencoder, y probaremos varios modelos de este.
+\section{Resultados}\label{SCM}
+Estudio sobre el uso de t ́ecnicas de detecci ́on de
+anomalias contra ataques adversarios
+1st N ́u ̃nez Rivera, Jorge
+Master Universitario en Investigaci ́on en Inteligencia Artificial
+Universidad Internacional Men ́endez Pelayo
+Santander, Espa ̃na
+jorgenunezrivera@gmail.com
+Abstract—Uno de los problemas a los que se han enfrentado
+los modelos de inteligencia artificial para diversas tareas de
+reconocimiento y evaluaci ́on de im ́agenes, textos, sonidos, etc.
+es el uso de ataques adversarios que permiten generar contenido
+modificado con el objetivo de enga  ̃nar a estos modelos. Este
+trabajo pretende estudiar el uso de modelos detectores de
+anomal ́ıas para detectar con facilidad el uso de estos ataques.
+Index Terms—Deep learning, ataques adversarios, detector de
+anomalias
+I. INTRODUCCI  ́ON
+El importante desarrollo de la inteligencia artificial en los
+ ́ultimos a ̃nos ha dado lugar a nuevos tipos de modelos con ca-
+pacidades asombrosas como el reconocimiento de im ́agenes o
+sonidos, el procesamiento de textos que permite la traducci ́on,
+resumen e incluso generaci ́on de textos, y otras muchas. Uno
+de los tipos de modelo desarrollados recientemente es el de los
+ataques adversarios. Estos modelos utilizan redes neuronales
+profundas para crear perturbaciones que son utilizadas para
+modificar contenido permitiendo enga ̃nar a una primera red
+neuronal profunda que realiza una tarea de tipo clasificaci ́on,
+como se ve en la Figura 1.
+Existen dos tipos de ataques adversarios, ”White Box”
+cuando se conoce el modelo a enga ̃nar y ”Black Box” cuando
+no se conoce pero se tiene acceso a la salida producida por
+una entrada a este. (BIB???)
+En este trabajo analizaremos el uso de t ́ecnicas de detecci ́on
+de anomal ́ıas para detectar el uso de estos ataques adver-
+sarios. Las t ́ecnicas de detecci ́on de anomal ́ıas son t ́ecnicas
+de machine learning que consisten en la detecci ́on de datos
+”an ́omalos”, que son todos aquellos que se diferencian espe-
+cialmente de la mayor ́ıa de los datos. (BIB???)
+Para ello, utilizaremos de base un modelo llamado Recom-
+mender que predice la puntuaci ́on que pondr ́a un usuario de
+TripAdvisor a un restaurante a partir de la imagen subida y
+el ID del usuario que la sube, y que se entrena con una base
+de datos de recomendaciones de usuarios de restaurantes de
+Gij ́on.
+Sobre este modelo buscaremos t ́ecnicas adecuadas de ataque
+adversario que permitan modificar las im ́agenes para enga ̃nar
+al recomendador y que de un resultado positivo aunque el
+comentario realmente sea negativo.
+Fig. 1. Ejemplo de un ataque adversario
+Por  ́ultimo analizaremos t ́ecnicas de detecci ́on de anomal ́ıas
+para detectar las im ́agenes que han sido modificadas por estos
+ataques adversarios y analizaremos si es posible realmente de-
+tectar con precisi ́on las im ́agenes modificadas por los ataques.
+II. ESTADO DEL ARTE
+Los  ́ultimos a ̃nos han sido claves para el desarrollo del
+aprendizaje profundo. La existencia de frameworks maduros
+accesibles a todo el mundo como Tensorflow, Pytorch o Keras
+ha facilitado el desarrollo de nuevas aplicaciones. Por otra
+parte, los  ́ultimos avances han puesto el aprendizaje profundo
+en el punto de mira de las compa ̃n ́ıas tecnol ́ogicas, que han
+invertido grandes esfuerzos en desarrollar sus propias IAs.
+Adem ́as, la existencia de frameworks como Cleverhans per-
+mite probar facilmente distintos tipos de ataques adversarios
+contra un modelo, para asi desarrollar modelos m ́as resistentes.
+A. Reconocimiento de im ́agenes
+En el campo del reconocimiento de im ́agenes, que es el
+que nos interesa, destacan como  ́ultimos avances, la red
+Mobilenetv2 [?], creada en 2018 con una arquitectura sencilla
+dise ̃nada para su uso en dispositivos m ́oviles, y la red NasNet,
+generada por un sistema de b ́usqueda de arquitecturas, es decir
+que la red ha sido a su vez generada por un algoritmo, y que
+consigue unos resultados en Imagenet de 82,5% en top 1 y
+96% en top 5 [1] REVISAR CITA. En la Figura 2 mostramos
+un resumen de las principales redes entrenadas para Imagenet,
+que han sido implementadas en Keras.
+B. Ataques adversarios
+Las  ́ultimas tecnolog ́ıas en ataques adversarios permiten
+enga ̃nar a las redes neuronales m ́as avanzadas. As ́ı, el trabajo
+Fig. 2. Redes neuronales preentrenadas disponibles en Keras
+”Attacks on State-of-the-Art Face Recognition using Atten-
+tional Adversarial Attack Generative Network” [2] permite
+modificar la im ́agen de una cara para que sea reconocida
+como una segunda, sin que sea practicamente distinguible de
+la primera por el ojo humano, como se ve en la Fig 3
+Por otra parte, aparecen ataques adversarios ”f ́ısicos” que
+actuan sobre objetos que quieren enga ̃nar al reconocedor,
+como gafas que impiden el reconocimiento facial, vinilos que
+puestos en los coches hacen que no sean identificados como
+tales, o pegatinas que puestas en se ̃nales de tr ́afico hacen que
+estas no sean detectadas correctamente por un coche que sea
+conducido de forma autom ́atica [3], as ́ı como ataques  ́opticos
+que modifican la im ́agen percibida mediante cambios en su
+iluminaci ́on o proyecciones sobre ella [4].
+Fig. 3. Ataque al reconocimiento facial: La primera columna es la im ́agen
+objetivo, la segunda y la cuarta son im ́agenes de caras originales y la tercera
+y la quinta son las modificaciones de estas im ́agenes que son reconocidas
+como la primera.
+C. Detecci ́on de anomal ́ıas
+La detecci ́on de anomal ́ıas es un proceso com ́un en machine
+learning, que utiliza aprendizaje no supervisado, y que se
+puede hacer con pr ́acticamente cualquier t ́ecnica de agru-
+pamiento o clustering, como DBSCAN o Gaussian Mixture,
+donde encontraremos las anomal ́ıas en los datos que se en-
+cuentran fuera de los clusters [5].
+Sin embargo con la llegada de las redes neuronales pro-
+fundas aparece el uso de los llamados Autoencoders para
+detecci ́on de anomal ́ıas. Los autoencoders son un tipo de red
+que aprende a codificar la informaci ́on y despues decodificarla,
+pasando por unas capas cuyo tama ̃no va descendiendo hasta
+un cuello de botella y luego aumentando. Asi cuando codi-
+fiquemos datos similares a los utilizados en el entrenamiento,
+el resultado de la decodificaci ́on ser ́a muy parecido al de los
+datos originales, mientras que cuando se trate de anomal ́ıas
+el resultado de la decodificaci ́on tendr ́a una diferencia mayor
+con los datos de entrada [6].
+III. SOLUCI  ́ON PROPUESTA
+A. Recomendador
+Para la soluci ́on empezaremos por probar varios modelos
+diferentes del recomendador para ver el que consigue mejores
+resultados calificando las recomendaciones negativas como
+tales ya que son en las que nos interesa hacer el ataque
+adversario. Para ello hemos utilizado Data Augmentation
+para compensar el desbalanceo del dataset, y tres modelos
+diferentes:
+• Model 1:
+• Model 2:
+• Model 3:
+B. Ataques adversarios
+Probaremos dos tipos de ataques.
+Uno se realizar ́a directamente sobre las deep features ex-
+traidas de las im ́agenes, que son las que usa el recomendador
+para predecir las recomendaciones, y sobre el modelo del
+recomendador. Estas deep features son extraidas con Densenet
+quit ́andole la  ́ultima capa densa.
+El otro realizar ́a el ataque sobre las im ́agenes originales y
+sobre un modelo que consistir ́a en densenet preentrenado con
+pesos de imagenet concatenado con el modelo del recomen-
+dador;y a continuaci ́on extraer ́a las features de las im ́agenes
+atacadas.
+Ambos ataques se realizaran con la t ́ecnica Projected Gra-
+dient Descent(REF)
+C. Detecci ́on de anomal ́ıas
+Una vez tengamos los ataques que sean capaces de enga ̃nar
+al recomendador apropiadamente, estudiaremos si los features
+resultados de estos ataques se pueden distinguir de los fea-
+tures de las im ́agenes originales mediante un autoencoder, y
+probaremos varios modelos de este.
+IV. RESULTADOS
+A. Recomendador
+B. Ataque adversario sobre las features
+C. Detecci ́on de anomal ́ıas sobre las features atacadas
+D. Ataque adversario sobre las im ́agenes
+E. Detecci ́on de anomal ́ıas sobre las features extraidas de las
+im ́agenes atacadas
+TABLE I
+TABLE TYPE STYLES
+Table Table Column Head
+Head Table column subhead Subhead Subhead
+copy More table copya
+aSample of a Table footnote.
+RECONOCIMIENTOS
+REFERENCES
+[1] Barret Zoph, Vijay Vasudevan, Jonathon Shlens, Quoc V. Le
+Learning Transferable Architectures for Scalable Image Recognition
+https://arxiv.org/abs/1707.08945
+[2] Qing Song, Yingqi Wu, Lu Yang Attacks on State-of-the-Art Face
+Recognition using Attentional Adversarial Attack Generative Network
+https://arxiv.org/abs/1811.12026
+[3] Kevin Eykholt, Ivan Evtimov, Earlence Fernandes, Bo Li, Amir Rah-
+mati, Chaowei Xiao, Atul Prakash, Tadayoshi Kohno, and Dawn Song
+Robust Physical-World Attacks on Deep Learning Visual Classification
+https://arxiv.org/abs/1707.08945
+[4] Junbin Fang, You Jiang, Canjian Jiang, Zoe L. Jiang, Siu-
+Ming Yiu, Chuanyi Liu State-of-the-art optical-based physical
+adversarial attacks for deep learning computer vision systems
+https://arxiv.org/abs/2303.12249v1
+[5] Mar ́ıa Garc ́ıa Gumbao Best Clustering Algorithms for anomaly
+detection https://towardsdatascience.com/best-clustering-algorithms-for-
+anomaly-detection-d5b7412537c8
+[6] Mana Masuda, Ryo Hachiuma, Ryo Fujii, Hideo Saito, Yusuke Sekikawa
+Toward Unsupervised 3D Point Cloud Anomaly Detection using Varia-
+tional Autoencoder https://arxiv.org/abs/2304.03420
+[7] M. Young, The Technical Writer’s Handbook. Mill Valley, CA: Univer-
+sity Science, 1989.
+
+
+class RecommenderNet(tf.keras.Model):
+
+    def call(self, inputs):
+        user_vector = tf.squeeze(self.user_embedding(inputs[0]))
+        restaurant_features = self.restaurant_dense(inputs[1])
+        dot_user_restaurant = tf.reduce_sum(user_vector * restaurant_features, axis=1, keepdims=True)
+        x = dot_user_restaurant
+        return tf.nn.sigmoid(x)
+
+class RecommenderNet2(tf.keras.Model):
+
+    def call(self, inputs):
+        user_vector = tf.squeeze(self.user_embedding(inputs[0]))
+        user_bias=self.user_bias(inputs[0])
+        if user_bias.shape.rank>1:
+            user_bias = tf.squeeze(user_bias, axis=1)
+        restaurant_features = self.restaurant_dense(inputs[1])
+        dot_user_restaurant = tf.reduce_sum(user_vector * restaurant_features, axis=1, keepdims=True)
+        x = dot_user_restaurant + user_bias
+        return tf.nn.sigmoid(x)
+
+class RecommenderNet3(tf.keras.Model):
+
+    def call(self, inputs):
+        user_vector = tf.squeeze(self.user_embedding(inputs[0]))
+        user_bias=self.user_bias(inputs[0])
+        if user_bias.shape.rank > 1:
+            user_bias = tf.squeeze(user_bias, axis=1)
+        restaurant_features = self.restaurant_dense1(inputs[1])
+        restaurant_features = self.restaurant_dense2(restaurant_features)
+        restaurant_features = self.restaurant_dense3(restaurant_features)
+        dot_user_restaurant = tf.reduce_sum(user_vector * restaurant_features, axis=1, keepdims=True)
+        x = dot_user_restaurant + user_bias
+        return tf.nn.sigmoid(x)

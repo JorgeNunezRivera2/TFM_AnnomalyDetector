@@ -1,0 +1,88 @@
+Ficheros principales:
+
+Recommender.py: Recomendador,Genera las bases de datos y extrae las features, entrena y prueba el recomendador
+Cleverhans_recommender.py: Genera los features adversarios con un ataque fgm o pgd, y los guarda en cl_recommender_test_features_path
+Cleverhans_densenet.py: Genera imagenes adversarias combinando densenet para extraer las features con el recommender. Guarda
+las imágenes y extrae sus features y los guarda en cl_densenet_test_features_path
+AnnomalyDetector.py: Entrena y prueba el detector de anomalías
+Experiment.py: Realiza un experimento completo
+
+Ficheros auxiliares:
+Utils: Contiene funciones auxiliares, y las direcciones de los ficheros de bases de datos y carpetas de imágenes
+Models: Contiene todos los modelos
+Generators: Contiene los generators y sequences
+
+Otros ficheros:
+DownloadAllImages: Descarga todas las imágenes de la base de datos en una carpeta
+cleverhans-generate-mynet: Genera imágenes adversarias para engañar al modelo casero hecho por mi (DirectRecommenderNet)
+recommender_fast_gradient_method, recommender_image_fast_gradient_method y recommender_projected_gradient descent son los
+ficheros de cleverhans modificados para aceptar como entradas los dos vectores (usuarios e imágenes)
+
+Ficheros de datos:
+original_database_path  = RVW :             Base de datos original                  ()
+train_images_df_path    = train_images_df   Datos de entrenamiento                  (user,image_name,rate)
+test_images_df_path     = test_images_df    Datos de test                           (user,image_name,rate)
+worst_images_df_path    = worst_images_df   Datos de test, solo reviews negativas   (user,image_name,rate)
+
+Ficheros de features:
+clean_deep_features : features de la base de datos original
+test_deep_features  : features del test set
+worst_deep_features : features de las reviews negativas del test set
+cl_recommender_test_features: features adversarias del test set generadas con cleverhans y la red
+recommender
+cl_recommender_worst_features: features adversarias delas reviews negativas del test set generadas
+con cleverhans y la red recommender
+cl_densenet_test_features: features adversarias del test set generadas con cleverhans y la combinacion
+de la red densenet con la red recommender
+cl_densenet_worst_features: features adversarias de las reviews negativas del test set generadas con
+cleverhans y la combinacion de la red densenet con la red recommender
+
+Carpetas de imágenes:
+images_shared: Conjunto de todas las imágenes
+test_images: Imágenes del conjunto de test
+worst_test_images: Imágenes de las reviews negativas del conjunto de test
+cleverhans_densenet_test_images: Imágenes adversarias del conjunto de test generadas con cleverhans,
+densenet y la red recommender
+
+weights:
+recommender_weights[1-3]: Pesos de la red recommender entrenada sin augmentation para los modelos 1-3
+recommender_with_augmentation_weights[1-3]: Pesos de la red recommender entrenada  con augmentation para
+los modelos 1-3
+annomaly_detector_weights[1-3]: Pesos de la red annomaly_detector para los modelos 1-3
+
+Modelos:
+Hay 3 modelos de la red recommender:
+RecommenderNet es la red original, que multiplica una capa embedding  de usuarios por una de restaurant
+features
+RecommenderNet2 es la red original pero añadiendo la capa user_bias
+RecommenderNet3 Es la red modificada con dos capas densas añadidas a las restaurant features
+
+Ademas, la red RecommenderFromImageNet combina en un solo paso la extracción de features on Densenet y
+la red RecommenderNet deseada
+
+Hay 3 modelos de AnnomalyDetector
+AnnomalyDetector es un simple AutoEncoder con tamaños de capa:
+ 256 -> 128 -> 64 -> 32 ->64 ->128 ->256 -> 1024
+AnnomalyDetector2 es aun mas simple:
+ 512 -> 128 -> 32 ->128 ->512 -> 1024
+AnnomalyDetector3 tiene:
+ 512 con l2 reg, dropout 0.2, 256,128,64,128, dropout 0.2,256,512,1024
+
+El recomendador lo copie del notebook que me pasasteis pero tuve que hacer algunas modificaciones para que funcionara porque
+la base de datos era ligeramente distinta. Además tiene algunos añadidos como la funcion de copiar las imágenes de test
+a otra carpeta
+
+Cleverhans genera las imágenes adversarias para cada usuario e imagen, es decir que para cada imágen intenta crear una imagen
+que engañe al recomendador para el propio usuario que subió la imagen , sin tener en cuenta al resto de los usuarios.
+Se podría cambiar facilmente el vector de usuarios por uno aleatorio
+
+El detector de anomalias puede usar cualquiera de las redes AnnomalyDetector, AnnomalyDetector2 y AnnomalyDetector3.
+
+Cleverhans_densenet genera imágenes adversarias en mapa de bits a partir de las imágenes, y despues extrae las features
+Cleverhans_recommender genera ejemplos adversarios de deep features
+
+El annomaly detector utiliza directamente las deep features, que son 1024
+
+En general, utilizando cleverhans_recommender con el modelo 3 y una epsilon de 0.3, engaña al recomendador con
+practicamente todsas las imágenes. Con el modelo 3 de annomaly detector podemos separar prácticamente todos los
+ejemplos adversarios.

@@ -1,0 +1,200 @@
+eps iter: 0.5
+ epsilon = 30.0
+
+1/1 [==============================] - 9s 9s/step
+Found 986 validated image filenames.
+C:\Users\jorge\Documents\TFM - copia\TFM\venv\lib\site-packages\keras\preprocessing\image.py:1137: UserWarning: Found 922 invalid image filename(s) in x_col="image_name". These filename(s) will be ignored.
+  warnings.warn(
+
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6357549428939819
+49bad recomendations, 32 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 1.0
+Found 986 validated image filenames.
+
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 9s 9s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.551528811454773
+49bad recomendations, 23 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 1.5
+Found 986 validated image filenames.
+processing 64 images
+
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 9s 9s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 9s 9s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.4935854971408844
+49bad recomendations, 15 fooled, 0 unfooled 62 improved, 2 worsened
+
+Process finished with exit code 0
+"C:\Users\jorge\Documents\TFM - copia\TFM\venv\Scripts\python.exe" "C:\Users\jorge\Documents\copia de seguridad\TFM\Experiment.py"
+eps iter: 0.2
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+C:\Users\jorge\Documents\TFM - copia\TFM\venv\lib\site-packages\keras\preprocessing\image.py:1137: UserWarning: Found 922 invalid image filename(s) in x_col="image_name". These filename(s) will be ignored.
+  warnings.warn(
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6905086040496826
+49bad recomendations, 36 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.4
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6522055268287659
+49bad recomendations, 32 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.6
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6141933798789978
+49bad recomendations, 27 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.7
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6000204682350159
+49bad recomendations, 27 fooled, 0 unfooled 64 improved, 0 worsened
+
+Process finished with exit code 0
+
+"C:\Users\jorge\Documents\TFM - copia\TFM\venv\Scripts\python.exe" "C:\Users\jorge\Documents\copia de seguridad\TFM\Experiment.py"
+eps iter: 0.03
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+C:\Users\jorge\Documents\TFM - copia\TFM\venv\lib\site-packages\keras\preprocessing\image.py:1137: UserWarning: Found 922 invalid image filename(s) in x_col="image_name". These filename(s) will be ignored.
+  warnings.warn(
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6113554239273071
+49bad recomendations, 30 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.08
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6742889881134033
+49bad recomendations, 36 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.1
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6805740594863892
+49bad recomendations, 36 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.13
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6910710334777832
+49bad recomendations, 36 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.16
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.171875, prediction mean: 0.3615376949310303, adversarial prediction mean: 0.6914417743682861
+49bad recomendations, 36 fooled, 0 unfooled 64 improved, 0 worsened
+
+Process finished with exit code 0

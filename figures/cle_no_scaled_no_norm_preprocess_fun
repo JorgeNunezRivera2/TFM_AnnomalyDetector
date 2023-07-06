@@ -1,0 +1,56 @@
+"C:\Users\jorge\Documents\TFM - copia\TFM\venv\Scripts\python.exe" "C:\Users\jorge\Documents\copia de seguridad\TFM\Experiment.py"
+eps iter: 0.01
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+C:\Users\jorge\Documents\TFM - copia\TFM\venv\lib\site-packages\keras\preprocessing\image.py:1137: UserWarning: Found 922 invalid image filename(s) in x_col="image_name". These filename(s) will be ignored.
+  warnings.warn(
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.28277963399887085, adversarial prediction mean: 0.28664180636405945
+48bad recomendations, 0 fooled, 0 unfooled 62 improved, 2 worsened
+eps iter: 0.1
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.28277963399887085, adversarial prediction mean: 0.32556551694869995
+48bad recomendations, 0 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 3.0
+Found 986 validated image filenames.
+processing 64 images
+processed 10 images of 64
+processed 20 images of 64
+processed 30 images of 64
+processed 40 images of 64
+processed 50 images of 64
+processed 60 images of 64
+epsilon = 30.0
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Found 986 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.171875, prediction mean: 0.28277963399887085, adversarial prediction mean: 0.33206772804260254
+48bad recomendations, 4 fooled, 1 unfooled 35 improved, 29 worsened
+
+Process finished with exit code 0

@@ -1,0 +1,84 @@
+"C:\Users\jorge\Documents\TFM - copia\TFM\venv\Scripts\python.exe" "C:\Users\jorge\Documents\copia de seguridad\TFM\Experiment.py" 
+eps iter: 0.03
+Found 4148 validated image filenames.
+C:\Users\jorge\Documents\TFM - copia\TFM\venv\lib\site-packages\keras\preprocessing\image.py:1137: UserWarning: Found 4084 invalid image filename(s) in x_col="image_name". These filename(s) will be ignored.
+  warnings.warn(
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.8046875, prediction mean: 0.7643862962722778, adversarial prediction mean: 0.9384708404541016, diff: 0.17408454418182373
+4bad recomendations, 3 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.05
+Found 4148 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 7s 7s/step
+Real mean: 0.8046875, prediction mean: 0.7643862962722778, adversarial prediction mean: 0.9526009559631348, diff: 0.18821465969085693
+4bad recomendations, 3 fooled, 0 unfooled 64 improved, 0 worsened
+eps iter: 0.1
+Found 4148 validated image filenames.
+Found 64 validated image filenames.
+1/1 [==============================] - 8s 8s/step
+Real mean: 0.8046875, prediction mean: 0.7643862962722778, adversarial prediction mean: 0.9652096033096313, diff: 0.20082330703735352
+4bad recomendations, 3 fooled, 0 unfooled 64 improved, 0 worsened
+2/2 [==============================] - 0s 16ms/step
+Mean Error in clean data: 0.19214540719985962
+Error variance in clean data: 0.003826158121228218
+2/2 [==============================] - 0s 16ms/step
+Mean error in adversarial data: 0.3665626049041748
+Error variance in adversarial data: 0.028208784759044647
+AUC = 0.752685546875 
+2/2 [==============================] - 0s 0s/step
+Mean Error in clean data: 0.1670851707458496
+Error variance in clean data: 0.00294934562407434
+2/2 [==============================] - 0s 16ms/step
+Mean error in adversarial data: 0.3394647240638733
+Error variance in adversarial data: 0.028928710147738457
+AUC = 0.75390625 
+2/2 [==============================] - 0s 0s/step
+Mean Error in clean data: 0.1726364642381668
+Error variance in clean data: 0.0029334761202335358
+2/2 [==============================] - 0s 0s/step
+Mean error in adversarial data: 0.34652405977249146
+Error variance in adversarial data: 0.0317285880446434
+AUC = 0.756591796875 
+2/2 [==============================] - 0s 0s/step
+Mean Error in clean data: 0.19214540719985962
+Error variance in clean data: 0.003826158121228218
+2/2 [==============================] - 0s 0s/step
+Mean error in adversarial data: 0.494270920753479
+Error variance in adversarial data: 0.06402029097080231
+AUC = 0.83984375 
+2/2 [==============================] - 0s 0s/step
+Mean Error in clean data: 0.1670851707458496
+Error variance in clean data: 0.00294934562407434
+2/2 [==============================] - 0s 0s/step
+Mean error in adversarial data: 0.46469730138778687
+Error variance in adversarial data: 0.06513524800539017
+AUC = 0.8553466796875 
+2/2 [==============================] - 0s 0s/step
+Mean Error in clean data: 0.1726364642381668
+Error variance in clean data: 0.0029334761202335358
+2/2 [==============================] - 0s 0s/step
+Mean error in adversarial data: 0.47068697214126587
+Error variance in adversarial data: 0.06961418688297272
+AUC = 0.8443603515625 
+2/2 [==============================] - 0s 16ms/step
+Mean Error in clean data: 0.19214540719985962
+Error variance in clean data: 0.003826158121228218
+2/2 [==============================] - 0s 0s/step
+Mean error in adversarial data: 0.6966392397880554
+Error variance in adversarial data: 0.13974791765213013
+AUC = 0.8653564453125 
+2/2 [==============================] - 0s 0s/step
+Mean Error in clean data: 0.1670851707458496
+Error variance in clean data: 0.00294934562407434
+2/2 [==============================] - 0s 0s/step
+Mean error in adversarial data: 0.6731899976730347
+Error variance in adversarial data: 0.14720085263252258
+AUC = 0.8896484375 
+2/2 [==============================] - 0s 0s/step
+Mean Error in clean data: 0.1726364642381668
+Error variance in clean data: 0.0029334761202335358
+2/2 [==============================] - 0s 0s/step
+Mean error in adversarial data: 0.6930824518203735
+Error variance in adversarial data: 0.15144258737564087
+AUC = 0.8687744140625 

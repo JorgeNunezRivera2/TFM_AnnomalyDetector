@@ -1,0 +1,2 @@
+model_checkpoint_path: "recommender_weights1"
+all_model_checkpoint_paths: "recommender_weights1"

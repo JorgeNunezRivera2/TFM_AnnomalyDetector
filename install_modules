@@ -1,0 +1,10 @@
+#Windows 11
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+https://learn.microsoft.com/es-ES/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
+pip install pandas
+pip install matplotlib
+pip install tensorflow
+pip install scikit-learn
+pip install keras_preprocessing
+pip install cleverhans
